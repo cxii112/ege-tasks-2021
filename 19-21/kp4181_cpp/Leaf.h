@@ -9,18 +9,23 @@
 #include <utility>
 
 class Leaf {
-    Leaf(int left, int right, Leaf *parent = nullptr) {
-        m_left = left;
-        m_right = right;
+    Leaf(std::pair<int, int> value, Leaf *parent = nullptr) {
+        m_value = value;
         m_parent = parent;
     }
+
     ~Leaf() {
         delete m_parent;
     }
 
 public:
     std::pair<int, int> value() const;
+
     void value(std::pair<int, int> nValue);
+
+    Leaf *parent();
+
+    void parent(Leaf *nParent);
 
 private:
     Leaf *m_parent;
