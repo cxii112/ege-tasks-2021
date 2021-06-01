@@ -4,10 +4,10 @@
 
 #include "Leaf.h"
 
-void Leaf::left(const int value) { m_left = value; }
+void Leaf::first(const int value) { m_value.first = value; }
 
-int Leaf::left() const { return m_left; }
+int Leaf::first() const { return m_value.first; }
 
-int Leaf::right() const { return m_right; }
+int Leaf::second() const { return m_value.second; }
 
-void Leaf::right(int value) { m_right = value; }
+void Leaf::second(int value) { m_value.second = value; }

@@ -6,6 +6,8 @@
 #define KP4181_CPP_LEAF_H
 
 
+#include <utility>
+
 class Leaf {
     Leaf(int left, int right, Leaf *parent = nullptr) {
         m_left = left;
@@ -17,15 +19,14 @@ class Leaf {
     }
 
 public:
-    int left() const;
-    void left(int value);
-    int right() const;
-    void right(int value);
+    int first() const;
+    void first(int value);
+    int second() const;
+    void second(int value);
 
 private:
     Leaf *m_parent;
-    int m_right;
-    int m_left;
+    std::pair<int, int> m_value;
 };
 
 
