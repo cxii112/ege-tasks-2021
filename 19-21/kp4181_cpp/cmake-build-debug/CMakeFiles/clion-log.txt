@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/cmake-build-debug
