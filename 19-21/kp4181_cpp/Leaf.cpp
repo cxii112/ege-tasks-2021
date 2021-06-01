@@ -1,13 +1,13 @@
 //
-// Created by Brain Update on 02.06.2021.
+// Created by cxii112 on 02.06.2021.
 //
 
 #include "Leaf.h"
 
-void Leaf::first(const int value) { m_value.first = value; }
+std::pair<int, int> Leaf::value() const {
+    return m_value;
+}
 
-int Leaf::first() const { return m_value.first; }
-
-int Leaf::second() const { return m_value.second; }
-
-void Leaf::second(int value) { m_value.second = value; }
+void Leaf::value(std::pair<int, int> nValue) {
+    m_value = nValue;
+}

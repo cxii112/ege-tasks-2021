@@ -19,10 +19,8 @@ class Leaf {
     }
 
 public:
-    int first() const;
-    void first(int value);
-    int second() const;
-    void second(int value);
+    std::pair<int, int> value() const;
+    void value(std::pair<int, int> nValue);
 
 private:
     Leaf *m_parent;
