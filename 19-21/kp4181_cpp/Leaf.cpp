@@ -19,3 +19,19 @@ Leaf *Leaf::parent() {
 void Leaf::parent(Leaf *nParent) {
     m_parent = nParent;
 }
+
+void Leaf::lChild(Leaf *nChild) {
+    m_lChild = nChild;
+}
+
+Leaf * Leaf::lChild() {
+    return m_lChild;
+}
+
+void Leaf::rChild(Leaf *nChild) {
+    m_rChild = nChild;
+}
+
+Leaf * Leaf::rChild() {
+    return nullptr;
+}

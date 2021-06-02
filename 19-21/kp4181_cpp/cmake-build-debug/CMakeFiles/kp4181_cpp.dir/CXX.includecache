@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/Leaf.cpp
+Leaf.h
+/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/Leaf.h
+
+/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/Leaf.h
+utility
+-
+
+/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/main.cpp
+iostream
+-
+iomanip
+-
+Leaf.h
+/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/Leaf.h
+

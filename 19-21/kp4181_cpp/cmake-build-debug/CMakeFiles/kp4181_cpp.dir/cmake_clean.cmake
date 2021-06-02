@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/kp4181_cpp.dir/Leaf.cpp.obj"
-  "CMakeFiles/kp4181_cpp.dir/main.cpp.obj"
-  "kp4181_cpp.exe"
-  "kp4181_cpp.exe.manifest"
-  "kp4181_cpp.lib"
+  "CMakeFiles/kp4181_cpp.dir/Leaf.cpp.o"
+  "CMakeFiles/kp4181_cpp.dir/main.cpp.o"
+  "kp4181_cpp"
   "kp4181_cpp.pdb"
 )
 
