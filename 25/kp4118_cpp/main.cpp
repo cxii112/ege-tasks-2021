@@ -53,8 +53,8 @@ std::vector<int> primeDividers(int forNumber, std::vector<bool> *searchIn) {
 
 int search_F(int forNumber, std::vector<bool> *searchIn){
     const std::vector<int> DIVIDERS = primeDividers(forNumber, searchIn);
-    if ((*searchIn).empty()) return 0;
-    return DIVIDERS.front() + DIVIDERS.back();
+    if (DIVIDERS.empty()) return 0;
+    return abs(DIVIDERS.front() - DIVIDERS.back());
 }
 
 int main() {
