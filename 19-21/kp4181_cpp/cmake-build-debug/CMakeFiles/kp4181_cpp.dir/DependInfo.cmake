@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "F:/studying-notes/ege/info/19-21/kp4181_cpp/Leaf.cpp" "F:/studying-notes/ege/info/19-21/kp4181_cpp/cmake-build-debug/CMakeFiles/kp4181_cpp.dir/Leaf.cpp.obj"
-  "F:/studying-notes/ege/info/19-21/kp4181_cpp/main.cpp" "F:/studying-notes/ege/info/19-21/kp4181_cpp/cmake-build-debug/CMakeFiles/kp4181_cpp.dir/main.cpp.obj"
+  "/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/Leaf.cpp" "/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/cmake-build-debug/CMakeFiles/kp4181_cpp.dir/Leaf.cpp.o"
+  "/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/main.cpp" "/Users/brainupdate112/Documents/repos/studying-notes/ege/info/19-21/kp4181_cpp/cmake-build-debug/CMakeFiles/kp4181_cpp.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
