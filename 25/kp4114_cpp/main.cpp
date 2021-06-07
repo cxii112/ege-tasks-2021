@@ -36,20 +36,20 @@ int main() {
     std::vector<bool> sieve;
     addPrimeNums(STOP, &sieve);
 
+    std::vector<int> primes;
+    for (int i = 0; i < sieve.size(); i++) {
+        if (sieve[i]) primes.push_back(i);
+    }
+
     int lBound = START;
     int cAnswers = 0;
     while (cAnswers < ANSWERS_COUNT) {
         if (lBound == STOP) break;
-        if (!sieve[lBound]) lBound++;
 
-        int rBound = lBound + 1;
-        while (rBound == IS_COUNT_PRIMES) {
-            rBound++;
+        if ((primes[lBound + 1] - 1) - (primes[lBound] + 1) + 1 >= MIN_LEN) {
+            std::cout << primes[lBound] + 1 << ' ' << primes[lBound + 1] - 1 << std::endl;
         }
-        if (rBound - lBound >= MIN_LEN) {
-            std::cout << lBound << ' ' << rBound << std::endl;
-            cAnswers++;
-        }
+        lBound++;
     }
 
     return 0;

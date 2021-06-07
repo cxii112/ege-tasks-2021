@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/brainupdate112/Documents/repos/studying-notes/ege/info/25/kp4114_cpp/main.cpp" "/Users/brainupdate112/Documents/repos/studying-notes/ege/info/25/kp4114_cpp/cmake-build-debug/CMakeFiles/kp4114_cpp.dir/main.cpp.o"
+  "F:/studying-notes/ege/info/25/kp4114_cpp/main.cpp" "F:/studying-notes/ege/info/25/kp4114_cpp/cmake-build-debug/CMakeFiles/kp4114_cpp.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
