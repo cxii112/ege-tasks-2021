@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/brainupdate112/Documents/repos/studying-notes/ege/info/25/kp3927_cpp/main.cpp
+iostream
+-
+vector
+-
+cmath
+-
+
