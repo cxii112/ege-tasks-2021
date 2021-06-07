@@ -3,7 +3,7 @@
 #include <vector>
 #include <cmath>
 
-void findPrimes(int dest, std::vector<bool> *addTo) {
+void findPrimes(unsigned long long dest, std::vector<bool> *addTo) {
 //    std::vector<bool> sieve;
     if ((*addTo).empty()) {
         (*addTo).assign(dest + 1, true);
@@ -37,12 +37,26 @@ void findPrimes(int dest, std::vector<bool> *addTo) {
 }
 
 int main() {
-    const int SEARCH_NEAR = 10000000;
+    const unsigned long long SEARCH_NEAR = 10000000;
     const int COUNT_LESS = 3;
     const int COUNT_MORE = 3;
 
     std::vector<bool> primes;
-    findPrimes((int)std::sqrt(SEARCH_NEAR), &primes);
-
+    findPrimes(SEARCH_NEAR, &primes);
+    std::map<unsigned long long, unsigned long long> ans;
+    auto idx = SEARCH_NEAR;
+    while (ans.size() < COUNT_LESS) {
+        if (primes[idx--]) ans[idx + 1] = SEARCH_NEAR - (idx + 1);
+    }
+    idx = SEARCH_NEAR;
+    while (ans.size() < COUNT_LESS + COUNT_MORE) {
+        if (primes.size() - 1 < idx) findPrimes(idx, &primes);
+        if (primes[idx++]){
+            ans[idx - 1] = (idx - 1) - SEARCH_NEAR;
+        }
+    }
+    for (auto item: ans) {
+        std::cout << item.first << ' ' << item.second << std::endl;
+    }
     return 0;
 }
